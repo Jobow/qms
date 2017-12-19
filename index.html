@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+	</head>
+	<body>
+<div class="container">
+	<div class="header">
+	<ul>
+		<li>User log</li>
+		<li>Section log</li>
+		<li>Service log</li>
+		<li>Queue Activity</li>
+		<li>Section interval report</li>
+		<li>Section Peak</li>
+		<li>Break time</li>
+		<li>User Time tracking </li>
+		<li>Survey report </li>
+		<li>Combined daily</li>
+	</ul>
+	</div>
+
+
+		<div class="date">
+			<label>Date :</label><input type="datetime-local" value="12-12-2017" placeholder="12-12-2017"/><input type="button" value="Generate" class="generate_btn" />
+		</div>
+		<h3 class="branch_ttl">Branch level Summary</h3>
+
+<section class="branch-section">
+<table class="table">
+   <thead class="thead-inverse">
+     <tr class="table_ttl">
+       <th></th>
+       <th>Longest <br/>Service time</th>
+       <th>shortest service time</th>
+       <th>Average<br/>Service Time</th>
+       <th>No. of <br/>customers</th>
+       <th>Longest<br/>waiting time</th>
+       <th>shortest<br/>waiting time</th>
+       <th>average<br/>waiting time</th>
+     </tr>
+   </thead>
+<tbody> 
+<tr>
+       <td>Teller</td>
+       <td>00:06:35</td>
+       <td>00:00:06</td>
+       <td>00:00:32</td>
+       <td>20</td>
+       <td>00:04:14</td>
+       <td>00:00:24</td>
+       <td>00:02:07</td>
+</tr>
+
+<tr>
+       <td>Service desk</td>
+       <td>00:02:34</td>
+       <td>00:00:08</td>
+       <td>00:00:24</td>
+       <td>11</td>
+       <td>00:01:28</td>
+       <td>00:00:14</td>
+       <td>00:0:48</td>
+</tr>
+
+   </tbody>
+   </table>
+</section>
+<section class="user">
+   <h3 class="user_ttl">User analysis summary</h3>
+   <table class="table">
+   <thead class="thead-inverse">
+     <tr class="table_ttl">
+       <th></th>
+       <th>Served</th>
+       <th>Not served</th>
+       <th>%served</th>
+       <th>Total<br/>Service Time</th>
+       <th>Total idle/<br/>Break time</th>
+       <th>% Time on Break/Idle</th>
+
+     </tr>
+   </thead>
+<tbody> 
+<tr>
+       <td>A.adminstrator</td>
+       <td>31</td>
+       <td>100.00%</td>
+       <td>00:15:28</td>
+       <td>00:00:00</td>
+       <td>00:00:00</td>
+    <td>0.0</td>
+</tr>
+
+<tr>
+       <td>A.adminstrator</td>
+       <td>31</td>
+       <td>100.00%</td>
+       <td>00:15:28</td>
+       <td>00:00:00</td>
+       <td>00:00:00</td>
+    <td>0.0</td>
+</tr>
+
+<tr>
+       <td>A.adminstrator</td>
+       <td>31</td>
+       <td>100.00%</td>
+       <td>00:15:28</td>
+       <td>00:00:00</td>
+       <td>00:00:00</td>
+    <td>0.0</td>
+</tr>
+
+   </tbody>
+   </table>
+ </section> 
+
+ <section class="individual">
+   <h3 class="individual_ttl">Individual Perfomance</h3>
+   <table class="table">
+   <thead class="thead-inverse">
+     <tr class="table_ttl">
+       <th></th>
+       <th>Longest<br/>service time</th>
+       <th>shortest<br/>service time</th>
+       <th>Average<br/>Service Time</th>
+       <th>Served</th>
+       <th>Not served</th>
+       <th>No.of transfers</th>
+       <th>Total<br/>service time</th>
+     </tr>
+   </thead>
+<tbody> 
+<tr>
+       <td>A.adminstrator</td>
+       <td>00:06:35</td>
+       <td>00.00.06</td>
+       <td>00:00:29</td>
+       <td>31</td>
+       <td>0</td>
+       <td>0</td>
+       <td>00:15:28</td>
+</tr> 
+<tr>
+       <td>A.adminstrator</td>
+       <td>00:06:35</td>
+       <td>00.00.06</td>
+       <td>00:00:29</td>
+       <td>31</td>
+       <td>0</td>
+       <td>0</td>
+       <td>00:15:28</td>
+</tr> 
+<tr>
+       <td>A.adminstrator</td>
+       <td>00:06:35</td>
+       <td>00.00.06</td>
+       <td>00:00:29</td>
+       <td>31</td>
+       <td>0</td>
+       <td>0</td>
+       <td>00:15:28</td>
+</tr> 
+   </tbody>
+   </table>
+ </section>
+
+   <section class="service">
+   <h3 class="service-reports_ttl">Service Reports</h3>
+   <table class="table">
+   <thead class="thead-inverse">
+     <tr class="table_ttl">
+       <th></th>
+       <th>Longest<br/>service<br/>Time</th>
+       <th>Shortest<br/>service time</th>
+       <th>Average<br/>service time</th>
+       <th>Total<br/>service Time</th>
+       <th>Served</th>
+        <th>Not Served</th>
+       <th>Longest<br/>waiting time</th>
+       <th>shortest<br/>waiting time</th>
+       <th>Queue Time<br/>SLA</th>
+       <th>Average<br/>waiting time</th>
+     </tr>
+   </thead>
+<tbody> 
+<tr class="teller"> 
+<th colspan="11" style="text-align:center;color:#000;">teller</th>
+</tr>
+<tr>
+      
+       <td>cash deposit</td>
+       <td>00:06:35</td>
+       <td>00:00:06</td>
+       <td>00:01:54</td>
+       <td>00:07:39</td>
+       <td>4</td>
+       <td>0</td>
+       <td>00:02:55</td>
+       <td>00:00:24</td>
+       <td>00:00:00</td>
+       <td>00:01:22</td>
+</tr>
+<tr>
+       <td>cash withdrawal</td>
+       <td>00:06:35</td>
+       <td>00:00:06</td>
+       <td>00:01:54</td>
+       <td>00:07:39</td>
+       <td>4</td>
+       <td>0</td>
+       <td>00:02:55</td>
+       <td>00:00:24</td>
+       <td>00:00:00</td>
+       <td>00:01:22</td>
+</tr>
+<tr>
+       <td>RTGS SWIFT</td>
+       <td>00:06:35</td>
+       <td>00:00:06</td>
+       <td>00:01:54</td>
+       <td>00:07:39</td>
+       <td>4</td>
+       <td>0</td>
+       <td>00:02:55</td>
+       <td>00:00:24</td>
+       <td>00:00:00</td>
+       <td>00:01:22</td>
+</tr>
+
+   </tbody>
+   </table>
+ </section> 
+    <section class="idle-time">
+   <h3 class="idle-time_ttl">Idle time reports</h3>
+   <table class="table">
+   <thead class="thead-inverse">
+     <tr class="table_ttl">
+       <th></th>
+       <th>Longest idle time</th>
+       <th>shortest idle time</th>
+       <th>Average idle time</th>
+       <th>Total idle time</th>
+      
+     </tr>
+   </thead>
+<tbody> 
+<tr>
+       <td>A.administrator</td>
+       <td>00:01:02</td>
+       <td>00:01:02</td>
+       <td>00:01:02</td>
+       <td>00:01:02</td>
+ 
+ </tr> 
+ <tr>
+       <td>A.administrator</td>
+       <td>00:01:02</td>
+       <td>00:01:02</td>
+       <td>00:01:02</td>
+       <td>00:01:02</td>
+ 
+ </tr>
+ <tr>
+       <td>A.administrator</td>
+       <td>00:01:02</td>
+       <td>00:01:02</td>
+       <td>00:01:02</td>
+       <td>00:01:02</td>
+ 
+ </tr>  
+   </tbody>
+   </table>
+ </section> 
+
+  <section class="break">
+   <h3 class="Break-time_ttl">Break time reports</h3>
+   <table class="table">
+   <thead class="thead-inverse">
+     <tr class="table_ttl">
+       <th></th>
+       <th>Longest<br/>Break Time</th>
+       <th>shortest<br/>Break Time</th>
+       <th>Average<br/>Break time</th>
+       <th>Total<br/>Break time</th>
+     </tr>
+   </thead>
+<tbody> 
+<tr>
+      
+       <td>A.administrator</td>
+       <td>00:01:02</td>
+       <td>00:01:02</td>
+       <td>00:01:02</td>
+       <td>00:01:02</td>
+    
+</tr> 
+<tr>
+      
+       <td>A.administrator</td>
+       <td>00:01:02</td>
+       <td>00:01:02</td>
+       <td>00:01:02</td>
+       <td>00:01:02</td>
+    
+</tr> 
+<tr>
+      
+       <td>A.administrator</td>
+       <td>00:01:02</td>
+       <td>00:01:02</td>
+       <td>00:01:02</td>
+       <td>00:01:02</td>
+    
+</tr> 
+
+   </tbody>
+   </table>
+ </section> 
+
+  <section class="individual-srvice">
+   <h3 class="individual-service_ttl">Individual service breakdown reports</h3>
+   <table class="table">
+   <thead class="thead-inverse">
+     <tr class="table_ttl">
+       <th></th>
+       <th>served</th>
+       <th>skipped</th>
+       <th>service SLA</th>
+       <th>Average<br/>service time</th>
+       <th>first<br/>ticket</th>
+       <th>last<br/>ticket</th>
+     </tr>
+
+   </thead>
+<tbody> 
+<tr class="administrator"><th colspan="11" style="text-align:center;color:#000;">A.administrator</th></tr>
+<tr>
+       <td>Cash Deposit</td>
+       <td>4</td>
+       <td>0</td>
+       <td>00:00:00</td>
+       <td>00:01:54</td>
+       <td>Dec 12 11:12:42 AM</td>
+       <td>Dec 12 11:31:42 AM</td>
+</tr> 
+<tr>
+       <td>Cash Deposit</td>
+       <td>4</td>
+       <td>0</td>
+       <td>00:00:00</td>
+       <td>00:01:54</td>
+       <td>Dec 12 11:12:42 AM</td>
+       <td>Dec 12 11:31:42 AM</td>
+</tr> 
+<tr>
+       <td>Cash Deposit</td>
+       <td>4</td>
+       <td>0</td>
+       <td>00:00:00</td>
+       <td>00:01:54</td>
+       <td>Dec 12 11:12:42 AM</td>
+       <td>Dec 12 11:31:42 AM</td>
+</tr> 
+<tr><th colspan="11" style="text-align:center;color:#000;background:#aee;font-weight:600;font-family: Helvetica,sans-serif;">Service desk f.wanjema</th></tr>
+<tr><th colspan="11" style="text-align:center;background:#fff;color:#000;font-family: Helvetica,sans-serif;">No user activity</th></tr>
+<tr><th colspan="11" style="text-align:center;color:#000;background:#aee;font-weight:600;font-family: Helvetica,sans-serif;">Teller operator j.Wekesa</th></tr>
+<tr><th colspan="11" style="text-align:center;background:#fff;color:#000;font-family: Helvetica,sans-serif;">No user activity</th></tr>
+<tr><th colspan="11" style="text-align:center;color:#000;background:#aee;font-weight:600;font-family: Helvetica,sans-serif;">Teller operator c.kalonzya</th></tr>
+<tr><th colspan="11" style="text-align:center;background:#fff;color:#000;font-family: Helvetica,sans-serif;">No user activity</th></tr>
+<tr><th colspan="11" style="text-align:center;color:#000;background:#aee;font-weight:600;font-family: Helvetica,sans-serif;">Teller operator l.Omano</th></tr>
+<tr><th colspan="11" style="text-align:center;background:#fff;color:#000;font-family: Helvetica,sans-serif;">No user activity</th></tr>
+   </tbody>
+   </table>
+ </section>
+ <input type="text" value="export to excel" class="export" />
+ </div> 
+	</body>
+</html>
